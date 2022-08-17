@@ -1,0 +1,23 @@
+*
+{
+    font-family: arial;
+}
+.form-project{
+   
+    background-color: #eeeeee;
+}
+
+h3
+{
+    color: #AAA;
+}
+label
+{
+    color: #333;
+}
+/* button:hover
+{
+    box-shadow: 4px 4px #AAA;
+    background-color: rgb(38, 38, 119)!important;
+    
+} */

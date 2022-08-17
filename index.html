@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+<body>
+    <div class="container pt-2">
+        <div class="container border-bottom py-5 px-5">
+            <h3 class="fw-bold mx-3">Bookmarker</h3>
+        </div>
+        <div class="container form-container text-center ">
+            <div class="form-project py-5 my-3 mx-5">
+                <h2 class="pb-4 fw-bold">Bookmark your favorite sites</h2>
+                <div class="form-group mx-5">
+                    <label class="fw-bold text-center" for="name">Site Name</label>
+                    <input type="text" name="name" id="name" class="form-control mb-3" placeholder="Bookmark Name">
+                    <div id="emptyName" class="alert alert-danger"></div>
+                </div>
+                <div class="form-group mx-5">
+                    <label class="fw-bold text-center" for="URL">Site URL</label>
+                    <input type="text" name="URL" id="URL" class="form-control mb-4" placeholder="Bookmark Name">
+                    <div id="emptyUrl" class="alert alert-danger"></div>
+                </div>
+                <button type="submit" disabled id="addBtn" class="btn btn-primary">Submit</button>
+                <button id="updateBtn" onclick="updateBookMark()" class="btn btn-warning d-none">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-50 mx-auto my-5">
+        <input oninput="searchBookMark(this.value)" id="searchInput" type="search" placeholder="Search By Name" class="form-control">
+    </div>
+
+    <table class="table w-75 m-auto mt-5">
+        <tbody id="tableBody" >
+            
+        </tbody>
+    </table>
+    <div class="container p-5 ">
+        <p class="fw-bold px-5">© 2019 Bookmarker Inc.</p>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mean.js"></script>
+</body>
+</html>
